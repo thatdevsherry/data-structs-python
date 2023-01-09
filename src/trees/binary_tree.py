@@ -77,7 +77,7 @@ class BST:
         return list(chain(node.value, left_result, right_result))
 
     @staticmethod
-    def find_char_in_tree(char: str, node: Self | None) -> bool:
+    def find_value_in_tree(value: T, node: Self | None) -> bool:
         is_char_present = False
 
         if node is None:
@@ -87,7 +87,7 @@ class BST:
 
         while len(queue) > 0:
             current = queue.pop()
-            if current.value == char:
+            if current.value == value:
                 is_char_present = True
                 break
 

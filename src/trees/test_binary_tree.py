@@ -48,13 +48,13 @@ def test_breadth_first_traversal_iterative(root_node_of_binary_tree):
     assert result == expected
 
 
-def test_find_char_in_tree(root_node_of_binary_tree):
+def test_find_value_in_tree(root_node_of_binary_tree):
     char, expected = 'a', True
-    result = BST.find_char_in_tree(char, root_node_of_binary_tree)
+    result = BST.find_value_in_tree(char, root_node_of_binary_tree)
     assert result == expected
 
 
-def test_failing_find_char_in_tree(root_node_of_binary_tree):
+def test_failing_find_value_in_tree(root_node_of_binary_tree):
     char, expected = 'this is nice', False
-    result = BST.find_char_in_tree(char, root_node_of_binary_tree)
+    result = BST.find_value_in_tree(char, root_node_of_binary_tree)
     assert result == expected
